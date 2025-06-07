@@ -2,6 +2,8 @@
 
 A beautiful, clean, and engaging Pomodoro timer featuring a cute tomato character to boost your productivity using the Pomodoro Technique.
 
+*🚀 Now deployed automatically from the main branch using GitHub Actions!*
+
 ![Pomodoro Timer](https://img.shields.io/badge/React-18-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-Latest-blue) ![Tailwind](https://img.shields.io/badge/Tailwind-CSS-blue)
 
 ## ✨ Features

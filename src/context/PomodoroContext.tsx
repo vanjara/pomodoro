@@ -1,16 +1,20 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
 
-export enum TimerMode {
-  WORK = 'work',
-  SHORT_BREAK = 'short-break',
-  LONG_BREAK = 'long-break',
-}
+export const TimerMode = {
+  WORK: 'work',
+  SHORT_BREAK: 'short-break',
+  LONG_BREAK: 'long-break',
+} as const;
 
-export enum TimerStatus {
-  IDLE = 'idle',
-  RUNNING = 'running',
-  PAUSED = 'paused',
-}
+export type TimerMode = typeof TimerMode[keyof typeof TimerMode];
+
+export const TimerStatus = {
+  IDLE: 'idle',
+  RUNNING: 'running',
+  PAUSED: 'paused',
+} as const;
+
+export type TimerStatus = typeof TimerStatus[keyof typeof TimerStatus];
 
 export interface PomodoroSettings {
   workDuration: number;
